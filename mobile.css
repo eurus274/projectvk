@@ -1,0 +1,153 @@
+/* ---------------------------------------------------
+    MOBILE.CSS — All Mobile-Only Styles
+   --------------------------------------------------- */
+
+  body {
+    padding-top: 68px;
+  }
+
+.mobile-logo-section {
+  display:none;
+}
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 70px;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobilelogo {
+  display:flex;
+  align-items: center;
+}
+
+.mobilelogo img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.mobilelogo a:active img {
+  transition: transform 0.3s ease; /* smooth scaling */
+  transform: scale(0.9) /* slight shrink on click */
+}
+
+
+  /* ---------------------------------------------------
+        CAROUSEL MOBILE
+     --------------------------------------------------- */
+
+  /* hide arrows */
+  .prev, .next {
+    display: none !important;
+  }
+
+  .carousel {
+    margin: 0 4px;
+    max-height: 80vh;
+    border-radius: 0px;
+  }
+
+  .slide-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .slide-text p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  /* ---------------------------------------------------
+        MOBILE BOTTOM NAVBAR
+     --------------------------------------------------- */
+
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100%;
+    height: 70px;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* ---------------------------------------------------
+        ICONS (VISIBLE ONLY ON MOBILE)
+     --------------------------------------------------- */
+
+  .nav-links a i {
+    display: block;        /* show icons on mobile */
+    font-size: 20px;
+    margin: auto;
+  }
+
+  /* hide logo inside navbar */
+  .navbar .logo {
+    display: none !important;
+  }
+
+ /* ===== ICON + TEXT (MOBILE) ===== */
+  .nav-links a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;      /* text size */
+    text-decoration: none;
+    gap:5px;
+    color: #646464;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .nav-links a i {
+    font-size: 22px;
+    margin-bottom: 3px;
+    opacity: 0.8;
+  }
+
+  /* -------------------------
+     ACTIVE STATE
+     ------------------------- */
+  .nav-links a.active i {
+    color: #5839af;
+    opacity: 1;
+    font-size: 22px;
+    transition: 0.3s ease;
+  }
+  .nav-links a.active {
+    color: #383838;
+    font-weight: 600;
+  }
+.nav-links a:active i {
+  transition: transform 0.3s ease; /* smooth scaling */
+  transform: scale(0.9);  /* slight shrink on click */
+}
