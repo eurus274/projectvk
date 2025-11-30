@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const totalSlides = slides.length;
-const intervalTime = 3000; // 3 seconds
+const intervalTime = 4000; // 4 seconds
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
